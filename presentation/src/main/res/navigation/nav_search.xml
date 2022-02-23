@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/search_company_list_fragment">
+
+    <fragment
+        android:id="@+id/search_company_list_fragment"
+        android:name="com.hyeonbinni.companyinfosearch.ui.view.SearchCompanyListFragment"
+        tools:layout="@layout/fragment_search_company_list">
+
+        <action
+            android:id="@+id/action_search_company_list_fragment_to_search_company_detail_fragment"
+            app:destination="@id/search_company_detail_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/search_company_detail_fragment"
+        android:name="com.hyeonbinni.companyinfosearch.ui.view.SearchCompanyDetailFragment"
+        tools:layout="@layout/fragment_search_company_detail">
+
+        <argument
+            android:name="companyId"
+            app:argType="integer"/>
+
+        <argument
+            android:name="logoPath"
+            app:argType="string"/>
+
+        <argument
+            android:name="companyName"
+            app:argType="string"/>
+
+        <argument
+            android:name="rateTotalAvg"
+            app:argType="float"/>
+
+        <argument
+            android:name="industryName"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>
