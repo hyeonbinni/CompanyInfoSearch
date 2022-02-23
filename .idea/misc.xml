@@ -10,6 +10,7 @@
         <entry key="app/src/main/res/layout/item_cell_type_horizontal_theme.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_cell_type_horizontal_theme_unit.xml" value="0.12001811594202899" />
         <entry key="app/src/main/res/layout/item_cell_type_review.xml" value="0.1" />
+        <entry key="presentation/src/main/res/layout/fragment_search_company_detail.xml" value="0.11955420466058764" />
       </map>
     </option>
   </component>
